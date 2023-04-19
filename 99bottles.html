@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SHOWING THE 99 BOTTLES OF  BEER LYRICS</h1>
+        <div class="btn">
+            <button onclick="bottleLyrics()"> CLICK HERE</button>
+        </div>
+
+        <div id="show"></div>
+    </div>
+
+    <script>
+        function bottleLyrics() {
+        for(i = 99; i >= 0; i--){
+            if (i > 1) {
+                show.innerHTML += `<h3 style= 'color:blue'>'${i} Bottles of beer on the wall, ${i} bottles of beer</h3>`
+                show.innerHTML+= `<h4 style = 'color:red'>Take one down and pass it around.'<h4>  `
+            }
+            else if (i == 1) {
+                show.innerHTML += `<h3 style= 'color:blue'>'${i} Bottle of beer on the wall, ${i} bottle of beer</h3>`
+                show.innerHTML+= `<h4 style = 'color:red'>Take one down and pass it around.'<h4>  `
+                
+            }
+            else{
+                show.innerHTML += `<h3 style= 'color:blue'>'No more Bottle of beer on the wall, ${i} bottle of beer'</h3>`;
+                show.innerHTML+=` <h4 style='color:red'>Then get away</h4>`
+            }
+            // show.innerHTML += `<h3 style= 'color:blue'>'${i} Bottles of beer on the wall, ${i} bottles of beer</h3>`
+            //     show.innerHTML+= `<h5 style = 'color:red'>Take one down and pass it around.'<h5>  `;
+                   
+        }
+        }
+       
+    </script>
+</body>
+</html>
